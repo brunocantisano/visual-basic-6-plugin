@@ -18,7 +18,7 @@ http://zbz5.net/automating-build-visual-basic-6-project
 ## Common File Extensions in a Visual Basic 6 Project
 
 |Extension|Description|
-|----------|------:|
+|:--------|:------|
 |.frm|Form|
 |.bas|Module|
 |.frx|Automatically generated file for every graphic in the project|
