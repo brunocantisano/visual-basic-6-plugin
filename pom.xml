@@ -52,6 +52,18 @@
 			<url>http://repo.jenkins-ci.org/public/</url>
 		</pluginRepository>
 	</pluginRepositories>
+	<dependencies>
+		<dependency>
+			<groupId>org.jenkins-ci.plugins</groupId>
+			<artifactId>compress-artifacts</artifactId>
+			<version>1.7</version>
+		</dependency>
+		<dependency>
+			<groupId>sp.sd</groupId>
+			<artifactId>nexus-artifact-uploader</artifactId>
+			<version>2.10</version>
+		</dependency>
+	</dependencies>
 	<build>
 		<plugins>
 			<plugin>

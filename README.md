@@ -14,3 +14,61 @@ In a job configuration add a VB6 build step and define the path to the project f
 
 ## See also
 http://zbz5.net/automating-build-visual-basic-6-project
+
+## Common File Extensions in a Visual Basic 6 Project
+Extension   Description
+.frm    Form
+.bas    Module
+.frx    Automatically generated file for every graphic in the project
+.ocx    ActiveX Control
+.cls    Class Module
+.vbp    Visual Basic Project
+.ctlUser    Control File
+.ctxUser    Control Binary File
+.dca    Active Designer Cache
+.ddf    Package and Deployment Wizard CAB Information File
+.dep    Package and Deployment Wizard Dependency File
+.dob    ActiveX Document Form File
+.dox    ActiveX Document Binary Form File
+.dsr    Active Designer File
+.dsx    Active Designer Binary File
+.dws    Deployment Wizard Script File
+.log    Log file for Load Errors
+.oca    Control TypeLib Cache File
+.pag    Property Page File
+.pgx    Binary Property Page File
+.res    Resource File
+.tlb    Remote Automation TypeLib File
+.vbg    Visual Basic Group Project File
+.vbl    Control Licensing File
+.vbr    Remote Automation Registration File
+.vbw    Visual Basic Project Workspace File
+.vbz    Wizard Launch File
+.wct    WebClass HTML Template
+
+## Flowchart
+
+​```mermaid
+graph TD
+A[Find VB6 extensions from vbp file using regex]-->|ok| B
+B[Find files in filesystem]-->|ok| C
+C[Exists in Windows register?] -->|yes| P
+C-->|no|Q
+Q[Exists Locally]-->|yes|S
+Q-->|no|R
+S[Register]-->|ok|R
+R[Has dependencies]-->|ok| E
+R-->|no| I
+E[Seek dependencies]-->|ok| F
+F[Nexus Download]--> |ok| G
+G[Uncompress] --> |ok| H
+H[Register dependencies in Windows Register]
+H-->|ok|I
+I[Change Version]-->|1|J
+J[Compile]
+J-->|2|I
+I-->|ok|K
+K[Compress] --> |ok|L
+L[Nexus Upload]
+P[Unregister]-->|ok| Q
+​```
