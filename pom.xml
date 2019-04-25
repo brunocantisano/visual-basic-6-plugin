@@ -54,9 +54,9 @@
 	</pluginRepositories>
 	<dependencies>
 		<dependency>
-			<groupId>org.jenkins-ci.plugins</groupId>
-			<artifactId>compress-artifacts</artifactId>
-			<version>1.7</version>
+    			<groupId>org.jenkins-ci.plugins</groupId>
+    			<artifactId>pipeline-utility-steps</artifactId>
+    			<version>1.5.1</version>
 		</dependency>
 		<dependency>
 			<groupId>sp.sd</groupId>
