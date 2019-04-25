@@ -48,27 +48,4 @@ Extension   Description
 
 ## Flowchart
 
-​```mermaid
-graph TD
-A[Find VB6 extensions from vbp file using regex]-->|ok| B
-B[Find files in filesystem]-->|ok| C
-C[Exists in Windows register?] -->|yes| P
-C-->|no|Q
-Q[Exists Locally]-->|yes|S
-Q-->|no|R
-S[Register]-->|ok|R
-R[Has dependencies]-->|ok| E
-R-->|no| I
-E[Seek dependencies]-->|ok| F
-F[Nexus Download]--> |ok| G
-G[Uncompress] --> |ok| H
-H[Register dependencies in Windows Register]
-H-->|ok|I
-I[Change Version]-->|1|J
-J[Compile]
-J-->|2|I
-I-->|ok|K
-K[Compress] --> |ok|L
-L[Nexus Upload]
-P[Unregister]-->|ok| Q
-​```
+![ScreenShot](mermaid-diagram-vb6-plugin.svg?raw=true )
