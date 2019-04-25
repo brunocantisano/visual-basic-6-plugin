@@ -16,6 +16,7 @@ In a job configuration add a VB6 build step and define the path to the project f
 http://zbz5.net/automating-build-visual-basic-6-project
 
 ## Common File Extensions in a Visual Basic 6 Project
+```
 Extension   Description
 .frm    Form
 .bas    Module
@@ -45,7 +46,9 @@ Extension   Description
 .vbw    Visual Basic Project Workspace File
 .vbz    Wizard Launch File
 .wct    WebClass HTML Template
+```
 
 ## Flowchart
 
-![Mermaid](mermaid-diagram-vb6-plugin.svg?raw=true )
+![Mermaid](https://raw.githubusercontent.com/brunocantisano/visual-basic-6-plugin/master/mermaid-diagram-vb6-plugin.svg?sanitize=true)
+<img src="https://raw.githubusercontent.com/brunocantisano/visual-basic-6-plugin/master/mermaid-diagram-vb6-plugin.svg?sanitize=true">
