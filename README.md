@@ -48,4 +48,4 @@ Extension   Description
 
 ## Flowchart
 
-![ScreenShot](mermaid-diagram-vb6-plugin.svg?raw=true )
+![Mermaid](mermaid-diagram-vb6-plugin.svg?raw=true )
